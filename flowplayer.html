@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Navegadores Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="icon" type="image/x-icon" href="/bbcswebdav/institution/VIU/images/VIU_favicon_32.png">
+  <link rel="stylesheet" href="//cdn.flowplayer.com/releases/native/3/stable/style/flowplayer.css">
+  <script src="//cdn.flowplayer.com/releases/native/3/stable/flowplayer.min.js"></script>
+  <!-- Optional plugins -->
+  <script src="//cdn.flowplayer.com/releases/native/3/stable/plugins/hls.min.js"></script>
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="container-fluid">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a id="len1" class="hoverable" href="index.html">Index</a></li>
+          <li><a id="len2" class="hoverable" href="bitmovin.html">Bitmovin</a></li>
+          <li><a id="len3" class="hoverable" href="brid.html">Brid TV</a></li>
+          <li><a id="len4" class="hoverable" href="clappr.html">Clappr</a></li>
+          <li><a id="len5" class="hoverable" href="dashjs.html">Dash.js</a></li>
+          <li><a id="len6" class="hoverable" href="flowplayer.html">Flowplayer</a></li>
+          <li><a id="len7" class="hoverable" href="fluid.html">Fluid</a></li>
+          <li><a id="len8" class="hoverable" href="jwplayer.html">JW Player</a></li>
+          <li><a id="len9" class="hoverable" href="defecto.html">Defecto</a></li>
+          <li><a id="len10" class="hoverable" href="videojs.html">Video JS</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      <div class="page-title">
+        <h2>Flowplayer</h2>
+        <div class="box" id="player_container"></div>
+      </div>
+    </div>
+  </div>
+  <!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="scripts/script.js"></script>
+  <script>
+    flowplayer('#player_container', {
+      src: 'https://bitmovin-a.akamaihd.net/content/MI201109210084_1/MI201109210084_mpeg-4_hd_high_1080p25_10mbits.mp4',
+      token: ' eyJraWQiOiJVcGgxcmRETVVHak4iLCJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NiJ9.eyJjIjoie1wiYWNsXCI6MjIsXCJpZFwiOlwiVXBoMXJkRE1VR2pOXCJ9IiwiaXNzIjoiRmxvd3BsYXllciJ9.ajvmHAcbsXUXPoU-chEPkocNVHs4XzlFs7UBUI6C2RB0KyACY8LJWNZoQtuTLlhdHRm7-xNDlIQW0hiEdimrGQ',
+      style: 'position: absolute',
+      width: '50',
+    })
+  </script>
+</body>
+
+</html>
